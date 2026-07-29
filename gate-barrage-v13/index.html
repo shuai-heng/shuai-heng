@@ -10,7 +10,7 @@
 <body>
 <div class="app">
   <header class="header">
-    <div class="brand"><small>GATE BARRAGE V13</small><h1>单英雄开局 · <span>守住地面防线</span></h1></div>
+    <div class="brand"><small>GATE BARRAGE V13</small><h1>单英雄开局 · <span>逐步成长守线</span></h1></div>
     <div class="controls">
       <button id="restart" class="primary">开始 / 重开</button>
       <button id="pause">暂停</button>
@@ -26,7 +26,7 @@
     <div class="cell"><small>阶段</small><b id="phase">待命</b></div>
     <div class="cell"><small>覆盖路线</small><b id="lane">中路</b></div>
     <div class="cell wide"><small>任务</small><b id="mission">移动火力区域，阻止小怪越线</b><div class="bar"><span id="progress"></span></div></div>
-    <div class="cell wide"><small>增援 +5</small><b id="reinforce">约 30 秒后抵达</b><div class="bar"><span id="reinforceBar"></span></div></div>
+    <div class="cell wide"><small>下一次成长</small><b id="reinforce">约 12 秒后 +1</b><div class="bar"><span id="reinforceBar"></span></div></div>
     <div class="cell wide"><small>最危险目标</small><b id="danger">敌军尚未进入道路</b><div class="bar"><span id="dangerBar"></span></div></div>
   </section>
 
@@ -36,11 +36,11 @@
     <div class="banner" id="banner"></div>
     <div class="overlay" id="overlay">
       <div class="card" id="card">
-        <h2>只验证一件事：主动守线好不好玩</h2>
+        <h2>从 1 人开始，逐步把队伍打出来</h2>
         <p>开局只有一个主角。五条道路上的小怪不断靠近，你必须横向切换火力，优先处理最危险的一路。</p>
         <div class="rules">
-          <div class="rule"><b>1 人开局</b><small>成长前后差异更明显，不再一开始就像一支成熟小队。</small></div>
-          <div class="rule"><b>增援 +5</b><small>约 30 秒后五名英雄加入，1 人真实变成 6 人。</small></div>
+          <div class="rule"><b>小步成长</b><small>前期先增加 1 名伙伴，后续再随着压力逐步扩编，不固定一次 +5。</small></div>
+          <div class="rule"><b>真实入队</b><small>每次增援都会在下方真实增加人物，并同步增加可见火力。</small></div>
           <div class="rule"><b>没有弹幕</b><small>普通怪不发射子弹；后段只有一个精英怪偶尔释放明显地面预警。</small></div>
         </div>
         <button id="play" class="primary big">开始 80 秒战斗</button>
@@ -49,7 +49,7 @@
     </div>
   </main>
 
-  <footer class="footer">验收标准：不移动会失守；主动切换路线能守住；失败来自敌人越线，而不是满屏敌方子弹。</footer>
+  <footer class="footer">验收标准：不移动会失守；主动切换路线能守住；成长过程清楚可见，而不是突然堆满英雄。</footer>
 </div>
 <script src="game.js"></script>
 </body>
